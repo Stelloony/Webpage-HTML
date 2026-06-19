@@ -1,0 +1,114 @@
+*{ 
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body { 
+    background-image: url('423436.jpg');
+    background-size: cover;
+    background-position: center;
+    Background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Helvetica;
+    line-height: 1.6;
+    padding: 20px;
+    
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background: #cc6f06;
+    color: #130707;
+    padding: 10px 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    border-radius: 8px;
+}
+
+.main-header ul {
+    list-style: none; /*entfernt die punkte*/
+    display: flex; /*aktiviert die flexbox damit die liste nebeneinander angezeigt wird, nicht unterinander*/
+    justify-content: flex-end; /*rückt alles nach rechts ans ende*/
+    gap: 25px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+
+.main-header a {
+    color: rgb(8, 7, 8);
+    text-decoration: none;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Erzwingt genau 3 gleich breite Spalten */
+    gap: 20px;                             
+    align-items: start;                    /* Verhindert, dass die Karten unschön gestreckt werden */
+    margin-top: 20px;
+}
+
+
+.card {
+    background: rgb(160, 162, 166);
+    padding: 20px;
+    color: #161414;
+    border-radius: 8px;                   
+}
+
+/* Sorgt dafür, dass die Textfelder innerhalb der Karten bleiben und nicht rechts herausragen */
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;                        /* Setzt das Label über das Eingabefeld */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], /*selektoren für die formulare, wer und was wird gestyled*/
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"],
+form input[type="number"],
+form select {
+    width: 100%;                           /* Die Felder nutzen exakt die Breite der Grid-Karte */
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    box-sizing: border-box;                /* Verhindert, dass Padding die Box sprengt */
+}
+
+.main-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d86e28;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.main-footer a {
+    color: black;
+}

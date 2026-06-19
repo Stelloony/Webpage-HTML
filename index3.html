@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang = "de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>denkkosmos</title>
+        <link rel="stylesheet" href="style3.css">
+
+    </head>
+    <body>
+
+        <header class="main-header">
+            <h1>denkkosmos</h1> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="index2.html">Was ist Mathematik?</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
+        </header>
+    <main class="grid-container">
+        <section class="card">
+            <h2> <strong>Profil erstellen</strong> </h2>
+            <form action="https://gibm.becknet.ch/formular.php" method="post" class="card form-container" >
+                <fieldset> <legend>Persönliche Informationen</legend>
+                <p>
+                    <label for="username">Benutzername:</label>
+                    <input type="text" id="username" name="username" placeholder="Benutzername" autofocus required>
+                </p>
+            <p> 
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname" minlenght ="2" maxlength="45" placeholder="Vornamen" required>
+            </p>
+             <p>
+                  <label for="nachname">Nachname:</label>
+                 <input type="text" id="nachname" name="nachname" minlenght ="2" maxlength="45" placeholder="Nachnamen" required>
+             </p>
+              <p>
+                 <label for="email">Emailadresse:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </p>
+             <p>
+                <label for="telefonnummer">Telefonnummer:</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="+41" required>
+            </p>
+            <p>
+                <label for="passwort">Passwort:</label>
+                <input type="text" id="passwort" name="passwort" minlenght ="10" maxlength="45" placeholder="Passwort" required>
+            </p>
+            <p>  <label for="alter">Alter:</label>
+                <input type="number" id="alter" name="alter" min ="8" max="18" placeholder="Alter" required>
+             
+             </fieldset>
+               <p>
+                <button type="submit">Profil erstellen
+               </p>
+            </form>
+        </section>
+        <section class="card">
+            <h2> <strong>Kurse und weitere Auswahl</strong></h2>
+           <form action="https://gibm.becknet.ch/formular.php" method="post" class="card form-container" >
+                <fieldset> <legend>Kurse und Details</legend>
+                    <p>
+                        <label for="Wunschdatum">Datum:</label>
+                        <input type="date" id="wunschdatum" name="wunschdatum" required>
+                    </p>
+                     <p>
+                        <label for="fachbereich">Wähle deinen Fachbereich:</label>
+                        <select id="fachbereich" name="fachbereich" required>
+                        <option value="" >--Bitte wählen--</option>
+                        <option value="mathe">Mathematik</option>
+                        <option value="Physik">Physik</option>
+                        <option value="Geometrie">Geometrie</option>
+                        </select>   
+                    </p>
+                    <p>
+                        <label>Besitzt du Vorkenntnisse?</label>
+                        <input type="radio" id="kenntnisse-ja" name="vorkenntnisse" value="ja" required>
+                        <label for="kentnisse-ja">Ja</label>
+
+                        <input type="radio" id="kenntnisse-nein" name="vorkenntnisse" value="nein">
+                        <label for="kenntnisse-nein">Nein</label>
+                    </p>
+                    <p>
+                        <label>Welche Zusatzangebote interessieren dich?</label>
+                        <input type="checkbox" id="opt-newsletter" name="extras" value="newsletter">
+                        <label for="opt-newsletter">News aus der Wissenschaftswelt</label>
+                        <input type="checkbox" id="opt-labor" name="extras" value="labor">
+                        <label for="opt-labor">Zugang zum virtuellen Labor</label>
+                        </p>
+                </fieldset>
+                <p><button type="submit">Anmeldung abschicken</p>
+       </section>
+        <section class="card">
+            <h2><strong>Administratives</strong></h2>
+            <p><fieldset>
+        <legend>Weiteres</legend>
+
+       
+
+        <p>
+            <label for="bereichscode">3-stelliger Fachbereichs-Code:</label>
+            <input type="text" id="bereichscode" name="bereichscode" size="4" maxlength="3" placeholder="MAT">
+        </p>
+
+        <p>
+            <label for="status">Mitglieds-Status:</label>
+            <input type="text" id="status" name="status" value="ANWÄRTER" readonly>
+        </p>
+
+        <p>
+            <label for="rabatt">Guthaben-Rabatt (Aktuell inaktiv):</label>
+            <input type="text" id="rabatt" name="rabatt" value="0 CHF" disabled>
+        </p>
+         <p>
+                <button type="submit">Abschliessen
+               </p>
+
+    </fieldset> </p>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+          <p>
+            <a href="mailto:stella.turina@bbzbl-it.ch">Email</a>
+        </p>
+        <p>
+            <a href="tel:+41796072266">Telefon</a>
+        </p>
+        <p>
+         <a href="https://www.mathematikum.de/" target="_blank" rel="noopener noreferrer">Mathematikum Giessen</a>
+
+        </p>
+      </footer>
+    
+    </body>
+</html>
