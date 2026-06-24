@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang = "de">
+<html lang="de">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>denkkosmos</title>
+        <meta name="description" content="Erstell dein Profil und melde dich für den newsletter an!">
         <link rel="stylesheet" href="style3.css">
 
     </head>
@@ -15,8 +16,7 @@
                 <ul>
                     <li><a href="index.html">Startseite</a></li>
                     <li><a href="index2.html">Was ist Mathematik?</a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    
                 </ul>
             </nav>
         </header>
@@ -29,74 +29,86 @@
                     <label for="username">Benutzername:</label>
                     <input type="text" id="username" name="username" placeholder="Benutzername" autofocus required>
                 </p>
-            <p> 
+
+            <p>
                 <label for="vorname">Vorname:</label>
-                <input type="text" id="vorname" name="vorname" minlenght ="2" maxlength="45" placeholder="Vornamen" required>
+                <input type="text" id="vorname" name="vorname" maxlength="45" placeholder="Vornamen" required>
             </p>
-             <p>
-                  <label for="nachname">Nachname:</label>
-                 <input type="text" id="nachname" name="nachname" minlenght ="2" maxlength="45" placeholder="Nachnamen" required>
-             </p>
-              <p>
-                 <label for="email">Emailadresse:</label>
+
+            <p> <label for="nachname">Nachname:</label>
+                 <input type="text" id="nachname" name="nachname" maxlength="45" placeholder="Nachnamen" required>
+            </p>
+                 
+            <p> <label for="email">Emailadresse:</label>
                 <input type="email" id="email" name="email" placeholder="Email" required>
             </p>
-             <p>
-                <label for="telefonnummer">Telefonnummer:</label>
+                 
+            <p>   <label for="telefon">Telefonnummer:</label>
                 <input type="tel" id="telefon" name="telefon" placeholder="+41" required>
             </p>
-            <p>
-                <label for="passwort">Passwort:</label>
-                <input type="text" id="passwort" name="passwort" minlenght ="10" maxlength="45" placeholder="Passwort" required>
-            </p>
-            <p>  <label for="alter">Alter:</label>
-                <input type="number" id="alter" name="alter" min ="8" max="18" placeholder="Alter" required>
              
-             </fieldset>
-               <p>
-                <button type="submit">Profil erstellen
-               </p>
+            
+            <p> <label for="passwort">Passwort:</label>
+                <input type="text" id="passwort" name="passwort" maxlength="45" placeholder="Passwort" required>
+            </p>
+                
+            <p> <label for="alter">Alter:</label>
+                <input type="number" id="alter" name="alter" min ="8" max="18" placeholder="Alter" required>
+            </p>
+               
+        </fieldset> <button type="submit">Profil erstellen</button>
+          
             </form>
         </section>
+
         <section class="card">
             <h2> <strong>Kurse und weitere Auswahl</strong></h2>
            <form action="https://gibm.becknet.ch/formular.php" method="post" class="card form-container" >
                 <fieldset> <legend>Kurse und Details</legend>
                     <p>
-                        <label for="Wunschdatum">Datum:</label>
+                        <label for="wunschdatum">Datum:</label>
                         <input type="date" id="wunschdatum" name="wunschdatum" required>
                     </p>
-                     <p>
-                        <label for="fachbereich">Wähle deinen Fachbereich:</label>
-                        <select id="fachbereich" name="fachbereich" required>
+                    <p> <label for="fachbereich">Wähle deinen Fachbereich:</label>
+
+                 <select id="fachbereich" name="fachbereich" required>
                         <option value="" >--Bitte wählen--</option>
                         <option value="mathe">Mathematik</option>
                         <option value="Physik">Physik</option>
                         <option value="Geometrie">Geometrie</option>
-                        </select>   
+                 </select>
                     </p>
+
                     <p>
                         <label>Besitzt du Vorkenntnisse?</label>
                         <input type="radio" id="kenntnisse-ja" name="vorkenntnisse" value="ja" required>
-                        <label for="kentnisse-ja">Ja</label>
+                        <label for="kenntnisse-ja">Ja</label>
+                    </p>
 
-                        <input type="radio" id="kenntnisse-nein" name="vorkenntnisse" value="nein">
+                    <p> <input type="radio" id="kenntnisse-nein" name="vorkenntnisse" value="nein">
                         <label for="kenntnisse-nein">Nein</label>
                     </p>
-                    <p>
-                        <label>Welche Zusatzangebote interessieren dich?</label>
-                        <input type="checkbox" id="opt-newsletter" name="extras" value="newsletter">
+                    
+                    <p> <label>Welche Zusatzangebote interessieren dich?</label></p>
+
+                    <p> <input type="checkbox" id="opt-newsletter" name="extras" value="newsletter">
                         <label for="opt-newsletter">News aus der Wissenschaftswelt</label>
-                        <input type="checkbox" id="opt-labor" name="extras" value="labor">
+                    </p>
+                       <p><input type="checkbox" id="opt-labor" name="extras" value="labor">
                         <label for="opt-labor">Zugang zum virtuellen Labor</label>
-                        </p>
-                </fieldset>
-                <p><button type="submit">Anmeldung abschicken</p>
-       </section>
+                    </p>
+                        
+                       
+                
+                </fieldset> 
+                        <button type="submit">Anmeldung abschicken</button>
+         </form>
+                         </section>
+
         <section class="card">
             <h2><strong>Administratives</strong></h2>
-            <p><fieldset>
-        <legend>Weiteres</legend>
+            <fieldset>
+        <legend>Gutscheincodes</legend>
 
        
 
@@ -114,11 +126,12 @@
             <label for="rabatt">Guthaben-Rabatt (Aktuell inaktiv):</label>
             <input type="text" id="rabatt" name="rabatt" value="0 CHF" disabled>
         </p>
-         <p>
-                <button type="submit">Abschliessen
-               </p>
 
-    </fieldset> </p>
+         <p>
+                <button type="submit">Abschliessen</button>
+        </p>
+
+    </fieldset>
         </section>
       </main>
 

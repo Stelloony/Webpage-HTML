@@ -63,6 +63,32 @@ body {
     margin-top: 20px;
 }
 
+@media (max-width: 1200px){
+
+.grid-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-header {
+    font-size: 40px;
+}
+}
+
+@media(max-width: 768px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .main-header{
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+    .main-header ul {
+        font-size: 20px;
+    }
+}
+
+
+
 
 .card {
     background: rgb(160, 162, 166);
